@@ -1,8 +1,8 @@
-# Skill Pack 清单
+# Spec-Driven AI Workflow Kit 清单
 
 ## 包名
 
-`codex-skill-pack`
+`spec-driven-ai-workflow-kit`
 
 ## 适用对象
 

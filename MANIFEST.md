@@ -1,8 +1,8 @@
-# Skill Pack Manifest
+# Spec-Driven AI Workflow Kit Manifest
 
 ## Package Name
 
-`codex-skill-pack`
+`spec-driven-ai-workflow-kit`
 
 ## Intended Audience
 

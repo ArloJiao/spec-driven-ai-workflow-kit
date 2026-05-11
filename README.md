@@ -1,6 +1,7 @@
-# Codex Skill Pack
+# Spec-Driven AI Workflow Kit
 
-This package contains a portable set of Codex skills adapted for sharing with other users.
+This package contains a portable set of AI development workflow skills adapted for sharing with other users.
+The workflow is generic, while the included installer and skill format are currently optimized for Codex.
 
 It is split into two parts:
 
@@ -61,7 +62,7 @@ Use `-Force` to overwrite existing skill directories.
 
 ## Recommended First Use
 
-After installing `portable-core`, ask Codex:
+After installing `portable-core`, ask your AI coding assistant. In Codex, use:
 
 ```text
 Use $project-design-init to create ai-context for this repository.
@@ -102,7 +103,7 @@ This shareable package does not include:
 - Machine-specific paths
 - Customer/project-specific workstream records
 
-Recipients should customize `preflight-dev-context/references/environment-profile.md` after installation if they use the optional overlay. This does not need to be manual: ask Codex to use `$preflight-dev-context` to inspect the local machine, ask focused questions for unknowns, and update the profile after confirmation.
+Recipients should customize `preflight-dev-context/references/environment-profile.md` after installation if they use the optional overlay. This does not need to be manual: ask the assistant to use `$preflight-dev-context` to inspect the local machine, ask focused questions for unknowns, and update the profile after confirmation.
 
 Example:
 

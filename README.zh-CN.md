@@ -1,6 +1,7 @@
-# Codex Skill Pack 使用说明
+# Spec-Driven AI Workflow Kit 使用说明
 
-这是一组可分发使用的 Codex Skills，已经做过基础脱敏和路径参数化处理。
+这是一组可分发使用的 AI 开发工作流 skills，已经做过基础脱敏和路径参数化处理。
+它们的工作流思想是通用的，当前安装脚本和 skill 格式首选适配 Codex。
 
 包内分为两部分：
 
@@ -28,7 +29,7 @@
 
 ## 安装方式
 
-在 `codex-skill-pack` 目录下打开 PowerShell：
+在 `spec-driven-ai-workflow-kit` 目录下打开 PowerShell：
 
 ```powershell
 .\install.ps1 -Package portable-core
@@ -111,13 +112,13 @@ Use $project-design-sync. Refresh ai-context for the modules changed in the last
 
 安装后需要补充环境 profile，但这件事不需要完全手工做，可以交给 AI 引导完成。
 
-先让 Codex 执行：
+先让 AI 编码助手执行。使用 Codex 时可以这样说：
 
 ```text
 Use $preflight-dev-context to initialize my environment profile. Inspect common toolchains, network/proxy state, storage preferences, and remote-host conventions. Ask before recording any uncertain or sensitive information.
 ```
 
-Codex 应该先运行环境采集脚本，生成工作摘要；对不确定或敏感信息提出简短问题；得到确认后再更新：
+AI 编码助手应该先运行环境采集脚本，生成工作摘要；对不确定或敏感信息提出简短问题；得到确认后再更新：
 
 ```text
 <CodexHome>/skills/preflight-dev-context/references/environment-profile.md
@@ -176,7 +177,7 @@ Use $workstream-hub to initialize my workstream hub.
 .\install.ps1 -Package portable-core
 ```
 
-深度使用 Codex 管理多个项目的用户：
+深度使用 AI 编码助手管理多个项目的用户：
 
 ```powershell
 .\install.ps1 -Package all
@@ -194,4 +195,4 @@ Use $workstream-hub to initialize my workstream hub.
 - 不要把个人环境 profile 原样发给别人。
 - `portable-core` 应保持通用。
 - 个人偏好的工作流、服务器、路径和客户信息应放在接收者自己的本地 overlay/profile 中。
-- 如果某个 skill 引用了未安装的系统能力，Codex 应明确提示缺少依赖，而不是静默失败。
+- 如果某个 skill 引用了未安装的系统能力，AI 编码助手应明确提示缺少依赖，而不是静默失败。
