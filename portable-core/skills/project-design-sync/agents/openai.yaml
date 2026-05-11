@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Design Sync"
+  short_description: "Refresh repo-local design memory"
+  default_prompt: "Use $project-design-sync to refresh the repository's ai-context detailed design docs from the current code and tests."

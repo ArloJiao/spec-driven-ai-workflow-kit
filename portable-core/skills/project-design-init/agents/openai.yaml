@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Design Init"
+  short_description: "Bootstrap repo-local design memory"
+  default_prompt: "Use $project-design-init to create an ai-context detailed design record for the current repository."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Pattern Engineering"
+  short_description: "In-loop design guidance for maintainable code changes"
+  default_prompt: "Use $design-pattern-engineering to read the repo's local project context first, then implement or refactor this code with maintainable abstractions, compatibility-safe changes, and test-protected review."

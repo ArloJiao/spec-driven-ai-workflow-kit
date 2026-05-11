@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workstream Hub"
+  short_description: "Cross-project workstream and interruption memory"
+  default_prompt: "Use $workstream-hub to restore or update my active cross-project workstreams before we start coding."

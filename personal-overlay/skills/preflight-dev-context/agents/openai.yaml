@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preflight Dev Context"
+  short_description: "Shared dev environment preflight for local toolchains, network, and remote work"
+  default_prompt: "Build a concise picture of the local machine, relevant language toolchains, package managers, current network state, and known remote hosts before starting technical work."

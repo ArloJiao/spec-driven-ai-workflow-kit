@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Spec"
+  short_description: "Joint workflow skill that combines OpenSpec phase work with the core design-pattern-engineering skill"
+  default_prompt: "Use $design-spec when the repository uses OpenSpec and the task sits in explore, proposal, apply, or archive. Read the relevant OpenSpec context first, then rely on $design-pattern-engineering for pattern judgment, scope control, and implementation quality."
