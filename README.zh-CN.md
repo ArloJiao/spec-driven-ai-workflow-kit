@@ -74,24 +74,7 @@
 .\install.ps1 -Package all -DryRun
 ```
 
-## 发布包
-
-发布打包产物放在 GitHub Release，不存放在仓库目录里。
-
-发布方式是推送版本 tag：
-
-```powershell
-git tag v0.1.0
-git push origin v0.1.0
-```
-
-GitHub Actions 会自动生成类似下面的 zip：
-
-```text
-spec-driven-ai-workflow-kit-v0.1.0.zip
-```
-
-发布包会排除 `.git/`、`.github/`、本地临时文件和已生成压缩包。
+如果你不熟悉安装流程，可以让 AI 编码助手按这份 README 帮你完成安装。
 
 ## 推荐首次使用
 

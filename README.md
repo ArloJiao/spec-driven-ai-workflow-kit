@@ -64,24 +64,7 @@ Default `CodexHome` resolution:
 
 Use `-Force` to overwrite existing skill directories.
 
-## Release Package
-
-Release packages are published as GitHub Release assets, not stored in this repository.
-
-Create a release by pushing a version tag:
-
-```powershell
-git tag v0.1.0
-git push origin v0.1.0
-```
-
-GitHub Actions will create a zip named like:
-
-```text
-spec-driven-ai-workflow-kit-v0.1.0.zip
-```
-
-The release package excludes `.git/`, `.github/`, local temporary files, and generated archives.
+If you are not familiar with the installation steps, ask your AI coding assistant to follow this README and install it for you.
 
 ## Recommended First Use
 
