@@ -1,4 +1,6 @@
 *.zip
 *.tmp
+release/
+dist/
 .DS_Store
 Thumbs.db

@@ -60,6 +60,25 @@ Default `CodexHome` resolution:
 
 Use `-Force` to overwrite existing skill directories.
 
+## Release Package
+
+Release packages are published as GitHub Release assets, not stored in this repository.
+
+Create a release by pushing a version tag:
+
+```powershell
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+GitHub Actions will create a zip named like:
+
+```text
+spec-driven-ai-workflow-kit-v0.1.0.zip
+```
+
+The release package excludes `.git/`, `.github/`, local temporary files, and generated archives.
+
 ## Recommended First Use
 
 After installing `portable-core`, ask your AI coding assistant. In Codex, use:

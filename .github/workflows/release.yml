@@ -1,0 +1,56 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build release package
+        id: package
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          VERSION="${GITHUB_REF_NAME:-manual}"
+          PACKAGE_NAME="spec-driven-ai-workflow-kit-${VERSION}"
+          STAGING="${RUNNER_TEMP}/${PACKAGE_NAME}"
+
+          mkdir -p "${STAGING}"
+          rsync -a ./ "${STAGING}/" \
+            --exclude ".git" \
+            --exclude ".github" \
+            --exclude "*.zip" \
+            --exclude "*.tmp" \
+            --exclude "release" \
+            --exclude "dist" \
+            --exclude ".DS_Store" \
+            --exclude "Thumbs.db"
+
+          (cd "${RUNNER_TEMP}" && zip -r "${PACKAGE_NAME}.zip" "${PACKAGE_NAME}")
+          echo "asset=${RUNNER_TEMP}/${PACKAGE_NAME}.zip" >> "${GITHUB_OUTPUT}"
+          echo "name=${PACKAGE_NAME}.zip" >> "${GITHUB_OUTPUT}"
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.package.outputs.name }}
+          path: ${{ steps.package.outputs.asset }}
+
+      - name: Publish GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ steps.package.outputs.asset }}
+          generate_release_notes: true
