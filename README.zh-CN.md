@@ -1,5 +1,7 @@
 # Spec-Driven AI Workflow Kit 使用说明
 
+[English](README.md)
+
 这是一组可分发使用的 AI 开发工作流 skills，已经做过基础脱敏和路径参数化处理。
 它们的工作流思想是通用的，当前安装脚本和 skill 格式首选适配 Codex。
 

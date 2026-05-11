@@ -1,5 +1,7 @@
 # Spec-Driven AI Workflow Kit
 
+[中文说明](README.zh-CN.md)
+
 This package contains a portable set of AI development workflow skills adapted for sharing with other users.
 The workflow is generic, while the included installer and skill format are currently optimized for Codex.
 
