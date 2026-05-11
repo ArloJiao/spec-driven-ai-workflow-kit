@@ -5,6 +5,8 @@
 This package contains a portable set of AI development workflow skills adapted for sharing with other users.
 The workflow is generic, while the included installer and skill format are currently optimized for Codex.
 
+License: [MIT](LICENSE)
+
 It is split into two parts:
 
 - `portable-core`: recommended default install. These skills support maintainable coding, OpenSpec coordination, repo design memory, and skill governance.

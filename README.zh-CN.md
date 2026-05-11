@@ -5,6 +5,8 @@
 这是一组可分发使用的 AI 开发工作流 skills，已经做过基础脱敏和路径参数化处理。
 它们的工作流思想是通用的，当前安装脚本和 skill 格式首选适配 Codex。
 
+协议：[MIT](LICENSE)
+
 包内分为两部分：
 
 - `portable-core`：推荐默认安装。包含可通用的工程设计、OpenSpec 协作、`ai-context` 设计记忆和 skill 治理能力。
